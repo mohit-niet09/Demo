@@ -1,0 +1,10 @@
+<aura:component implements="flexipage:availableForAllPageTypes" access="global">
+    <aura:handler name="init" action="{!c.doInit}" value="{!this}" />
+    <aura:attribute name="firstNum" type="Integer" />
+    <aura:attribute name="secondNum" type="Integer" />
+    <aura:attribute name="result" type="Integer" />
+    <lightning:input label="First Number" value="{!v.firstNum}" type="number" />
+    <lightning:input label="Second Number" value="{!v.secondNum}" type="number" />
+    <lightning:button label="Add" onclick="{!c.addNumbers}" />
+    <p>{!v.result}</p>
+</aura:component>
