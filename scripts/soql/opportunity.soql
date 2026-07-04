@@ -1,0 +1,1 @@
+Select Id, Name From Opportunity where Isclose=false
