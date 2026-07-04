@@ -1,0 +1,7 @@
+<aura:component controller="AccountController" implements="flexipage:availableForAllPageTypes" access="global">
+    <aura:attribute name="accounts" type="Account[]" />
+    <aura:iteration items="{!v.accounts}" var="acc">
+        <p>{!acc.Name}</p>
+    </aura:iteration>
+    <lightning:button label="Load Accounts" onclick="{!c.loadAccounts}" />
+</aura:component>
